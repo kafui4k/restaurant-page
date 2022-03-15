@@ -1,1 +1,0 @@
-console.log("restaurant page project setup!");
