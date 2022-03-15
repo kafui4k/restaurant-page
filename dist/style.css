@@ -1,0 +1,114 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #EBBB47;
+    text-align: center;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+header {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo h1 {
+    display: grid;
+    padding: 8px;
+}
+
+.nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav ul,
+.nav li {
+    list-style-type: none;
+    gap: 10px;
+}
+
+.nav li{
+    text-align: center;
+    justify-content: start;
+    padding: 8px;
+    font-weight: bold;
+}
+
+section {
+    display: grid;
+    grid-column: span 3;
+    min-height: 500px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+section .section-header {
+    font-size: 3em;
+    font-style: normal;
+    margin-bottom: -5px;
+}
+
+section > h1 {
+    color: #212529;
+}
+
+section .section-text {
+    justify-content: center;
+    text-align: center;
+    max-width: 300px;
+    padding: 6px;
+}
+
+section .section-text p {
+    color: #2D332C;
+    font-style: normal;
+}
+
+footer {
+    display: grid;
+    grid-column: span 3;
+    min-height: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+footer nav,
+footer .footer-text {
+    min-width: 1000px;
+}
+
+footer nav ul {
+    display: grid;
+    border-top: 1px solid rgb(46, 42, 42);
+    border-bottom: 1px solid rgb(46, 42, 42);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+footer nav ul,
+footer nav li {
+    list-style-type: none;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .footer-text {
+    padding: 8px;
+}
