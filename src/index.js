@@ -1,15 +1,8 @@
-// const content = document.querySelector('#content');
+// const homepage = require('./homepage');
+import pageLoad from './initial-page-load';
 
-// const header = document.createElement('div');
-// header.classList.add('header');
-// header.innerHTML = `
-//     <nav>
-//         <ul>
-//             <li>About</li>
-//             <li>Menu</li>
-//             <li>contact</li>
-//         </ul>
-//     </nav>`;
+init();
 
-// content.appendChild(header);
-
+function init() {
+    pageLoad();
+}
