@@ -53,7 +53,7 @@ header {
 section {
     display: none;
     grid-column: span 3;
-    min-height: 300px;
+    min-height: 400px;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -140,7 +140,7 @@ section .section-text p {
 footer {
     display: grid;
     grid-column: span 3;
-    min-height: 300px;
+    min-height: 400px;
     justify-content: center;
     align-content: center;
 }
