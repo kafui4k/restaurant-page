@@ -1,15 +1,3 @@
-function headerLogo() {
-    const logo = document.createElement('div');
-    logo.classList.add('logo');
-
-    const logoText = document.createElement('h1');
-    logoText.innerText = 'MenuGALLERY';
-
-    logo.appendChild(logoText);
-
-    return logo;
-}
-
 function navLinks(lis) {
     const li = document.createElement('li');
     const a = document.createElement('a');
@@ -21,7 +9,7 @@ function navLinks(lis) {
     a.title = lis; 
                   
     // Set the href property.
-    a.href = '#';
+    a.href = lis;
 
     li.appendChild(a);
 
@@ -46,27 +34,29 @@ function navItems() {
 
     return nav;
 }
+function footer() {
+    const footerSection = document.createElement('footer');
+    footerSection.classList.add('footer');
 
-function header() {
-    const header = document.createElement('header');
-    header.classList.add('header');
-
-    const logo = headerLogo();
-    header.appendChild(logo);
+    const footerText = document.createElement('div');
+    footerText.classList.add('footer-text');
+    footerText.innerHTML = `
+        &copy; Copyright 2022. All Rights Reserved
+        <br><span>The Odin Project</span>
+    `;
 
     const nav = navItems();
-    header.appendChild(nav);
+    footerSection.appendChild(nav);
+    footerSection.appendChild(footerText);
 
-    return header;
+    return footerSection;
 }
 
-function pageLoad() {
+function footerPage() {
     const content = document.querySelector('#content');
     
-    const hd = header();
-    content.appendChild(hd);
-
+    const footerPage = footer();
+    content.appendChild(footerPage);
 }
 
-export default pageLoad;
-
+export default footerPage;
