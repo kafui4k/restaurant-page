@@ -1,8 +1,8 @@
 import pageLoad from './initial-page-load';
 import defaultHomePage from './home';
-import footerPage from './footer';
 import aboutPage from './about';
 import menuPage from './menu';
+import contactPage from './contact';
 
 
 init();
@@ -39,6 +39,10 @@ function getPage() {
             if (menuSection) {
                 menuSection.classList.remove('active');
             }
+            const contactSection = document.querySelector('.contact-page');
+            if (contactSection) {
+                contactSection.classList.remove('active');
+            }
             removeFooter();
             init(aboutPage);
             const newSection = document.querySelector('.about-page');
@@ -52,6 +56,10 @@ function getPage() {
             const aboutSection = document.querySelector('.about-page');
             if (aboutSection) {
                 aboutSection.classList.remove('active');
+            }
+            const contactSection = document.querySelector('.contact-page');
+            if (contactSection) {
+                contactSection.classList.remove('active');
             }
             removeFooter();
             init(menuPage);
@@ -72,10 +80,9 @@ function getPage() {
                 menuSection.classList.remove('active');
             }
             removeFooter();
-            // getPageData(menuPage);
-            // const menuSection = document.querySelector('.menu-page');
-            // menuSection.classList.add('active');
-            alert('menu page to be added soon!');
+            init(contactPage);
+            const contactSection = document.querySelector('.contact-page');
+            contactSection.classList.add('active');
         } else {
             // pageLoad();
         }
