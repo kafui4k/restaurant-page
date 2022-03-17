@@ -2,7 +2,7 @@ import footerPage from "./footer";
 
 function menu() {
     const menuSection = document.createElement('section');
-    menuSection.classList.add('section');
+    menuSection.classList.add('menu-page');
 
     const sectionHeader = document.createElement('h1');
     sectionHeader.classList.add('section-header');

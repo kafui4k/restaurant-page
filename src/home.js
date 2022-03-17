@@ -2,7 +2,7 @@ import footerPage from "./footer";
 
 function home() {
     const homeSection = document.createElement('section');
-    homeSection.classList.add('section.active');
+    homeSection.classList.add('home-page', 'active');
     const h1 = document.createElement('h1');
     h1.classList.add('section-header');
     h1.innerHTML = 'The Menu Gallery';

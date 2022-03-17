@@ -1,8 +1,8 @@
-import footerPage from './footer';
+import footerPage from "./footer";
 
 function aboutUs() {
     const about = document.createElement('section');
-    about.classList.add('section');
+    about.classList.add('about-page');
 
     const sectionHeader = document.createElement('h1');
     sectionHeader.classList.add('section-header');
