@@ -5,7 +5,7 @@ function menu() {
     menuSection.classList.add('menu-page');
 
     const sectionHeader = document.createElement('h1');
-    sectionHeader.classList.add('section-header');
+    sectionHeader.classList.add('section-header', 'section-header-menu');
     sectionHeader.innerHTML = "Anything You'll like to order...?";
 
     menuSection.appendChild(sectionHeader);

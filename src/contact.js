@@ -23,39 +23,30 @@ function contact() {
     card.classList.add('contact-card');
     card.innerHTML = `
         <div class="card-item">
-            <img src="./images/deep-dish-meat-pie.jpeg" alt="deep-dis-meat image">
+            <img class="contact-image" src="./icons/call-svgrepo-com.svg" alt="place holder image">
             <p class="card-title">
-                <a href="./recipes/deep-dish-meat-pie.html">
-                    Deep Dish Meat Pie
-                </a>
+                Support 
             </p>
             <p class="card-text">
-                ... a pretty fairly long text. Maybe little or maybe not. you'll
-                get to reed all when you tap the Dish name... Enjoy!
+                For customer support, call +233240002222 or e-mail. hi@restaurant-page.com
             </p>
         </div>
         <div class="card-item">
-            <img src="./images/deep-dish-meat-pie.jpeg" alt="deep-dis-meat image">
+            <img class="contact-image" src="./icons/handshake-svgrepo-com.svg" alt="deep-dis-meat image">
             <p class="card-title">
-                <a href="./recipes/deep-dish-meat-pie.html">
-                    Deep Dish Meat Pie
-                </a>
+                Partnership
             </p>
             <p class="card-text">
-                ... a pretty fairly long text. Maybe little or maybe not. you'll
-                get to reed all when you tap the Dish name... Enjoy!
+                For partner inquiries, send us an email via the e-mail below. partnership@restaurant-page.com
             </p>
         </div>
         <div class="card-item">
-            <img src="./images/deep-dish-meat-pie.jpeg" alt="deep-dis-meat image">
+            <img class="contact-image" src="./icons/printed-press-svgrepo-com.svg" alt="deep-dis-meat image">
             <p class="card-title">
-                <a href="./recipes/deep-dish-meat-pie.html">
-                    Deep Dish Meat Pie
-                </a>
+                Press
             </p>
             <p class="card-text">
-                ... a pretty fairly long text. Maybe little or maybe not. you'll
-                get to reed all when you tap the Dish name... Enjoy!
+                For press inquiries, send us an email via the e-mail below. press@restaurant-page.com
             </p>
         </div>
     `;
