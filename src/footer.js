@@ -9,7 +9,7 @@ function navLinks(lis) {
     a.title = lis; 
                   
     // Set the href property.
-    a.href = lis;
+    a.href = '#';
 
     li.appendChild(a);
 
